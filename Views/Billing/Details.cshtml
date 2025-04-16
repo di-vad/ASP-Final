@@ -1,0 +1,33 @@
+﻿@model vehicleManagementSystem.Models.Billing
+@{
+    ViewData["Title"] = "Billing Details";
+}
+
+<h2>Billing Details</h2>
+
+<dl class="row">
+    <dt class="col-sm-4">Customer</dt>
+    <dd class="col-sm-8">@Model.Reservation?.Customer?.Name</dd>
+
+    <dt class="col-sm-4">Vehicle</dt>
+    <dd class="col-sm-8">@Model.Reservation?.Vehicle?.Model</dd>
+
+    <dt class="col-sm-4">Reservation Period</dt>
+    <dd class="col-sm-8">@Model.Reservation?.StartDate.ToShortDateString() - @Model.Reservation?.EndDate.ToShortDateString()</dd>
+
+    <dt class="col-sm-4">Subtotal</dt>
+    <dd class="col-sm-8">@Model.Subtotal.ToString("C")</dd>
+
+    <dt class="col-sm-4">Tax</dt>
+    <dd class="col-sm-8">@Model.Tax.ToString("C")</dd>
+
+    <dt class="col-sm-4">Total</dt>
+    <dd class="col-sm-8">@Model.TotalAmount.ToString("C")</dd>
+
+    <dt class="col-sm-4">Issued Date</dt>
+    <dd class="col-sm-8">@Model.IssuedDate.ToShortDateString()</dd>
+</dl>
+
+<p>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</p>

@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    var username = ViewBag.Username as string;
+    var role = ViewBag.Role as string;
+}
+
+<h2>Welcome, @username!</h2>
+
+<p>Your role: <strong>@role</strong></p>
+
+<ul>
+    <li><a asp-controller="Vehicle" asp-action="Index">Manage Vehicles</a></li>
+    <li><a asp-controller="Customer" asp-action="Index">Manage Customers</a></li>
+    <li><a asp-controller="Reservation" asp-action="Index">Manage Reservations</a></li>
+    <li><a asp-controller="Billing" asp-action="Index">View Billing</a></li>
+    <li><a asp-controller="Report" asp-action="Index">Generate Reports</a></li>
+</ul>
+
+<form asp-action="Logout" method="get">
+    <button type="submit" class="btn btn-danger">Logout</button>
+</form>

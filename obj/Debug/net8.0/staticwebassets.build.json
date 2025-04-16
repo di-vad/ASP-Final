@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "KLo8q3D8r0dop8cg08BxQr5rONNTgmXehQgC5tohyd0=",
+  "Source": "vehicleManagementSystem",
+  "BasePath": "_content/vehicleManagementSystem",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "vehicleManagementSystem\\wwwroot",
+      "Source": "vehicleManagementSystem",
+      "ContentRoot": "C:\\Users\\yes\\Desktop\\ASP-4\\wwwroot\\",
+      "BasePath": "_content/vehicleManagementSystem",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\yes\\Desktop\\ASP-4\\wwwroot\\css\\site.css",
+      "SourceId": "vehicleManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yes\\Desktop\\ASP-4\\wwwroot\\",
+      "BasePath": "_content/vehicleManagementSystem",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "96al9q3jiy",
+      "Integrity": "wWdQvQigWToXGxV17zhO14rupZnAZHzFVSGsffmt/s8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/site.96al9q3jiy.css",
+      "AssetFile": "C:\\Users\\yes\\Desktop\\ASP-4\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wWdQvQigWToXGxV17zhO14rupZnAZHzFVSGsffmt/s8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 03:19:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "96al9q3jiy"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wWdQvQigWToXGxV17zhO14rupZnAZHzFVSGsffmt/s8="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\yes\\Desktop\\ASP-4\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wWdQvQigWToXGxV17zhO14rupZnAZHzFVSGsffmt/s8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 03:19:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wWdQvQigWToXGxV17zhO14rupZnAZHzFVSGsffmt/s8="
+        }
+      ]
+    }
+  ]
+}

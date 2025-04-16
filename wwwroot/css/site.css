@@ -1,0 +1,24 @@
+﻿body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+#wrapper {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#sidebar-wrapper {
+    border-right: 1px solid #ddd;
+}
+
+.list-group-item-action:hover {
+    background-color: #e2e6ea;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}

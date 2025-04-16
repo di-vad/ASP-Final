@@ -1,0 +1,28 @@
+﻿@model vehicleManagementSystem.Models.Reservation
+@{
+    ViewData["Title"] = "Delete Reservation";
+}
+
+<h2>Delete Reservation</h2>
+
+<div class="alert alert-danger">Are you sure you want to cancel this reservation?</div>
+
+<dl class="row">
+    <dt class="col-sm-3">Vehicle</dt>
+    <dd class="col-sm-9">@Model.Vehicle?.Model</dd>
+
+    <dt class="col-sm-3">Customer</dt>
+    <dd class="col-sm-9">@Model.Customer?.Name</dd>
+
+    <dt class="col-sm-3">Start Date</dt>
+    <dd class="col-sm-9">@Model.StartDate.ToShortDateString()</dd>
+
+    <dt class="col-sm-3">End Date</dt>
+    <dd class="col-sm-9">@Model.EndDate.ToShortDateString()</dd>
+</dl>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

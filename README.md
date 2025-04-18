@@ -1,22 +1,22 @@
-# 🚗 Vehicle Rental Management System
+#  Vehicle Rental Management System
 
 An ASP.NET Core MVC application that allows car rental companies to manage their fleet of vehicles, reservations, customers, billing, and reporting. This project is designed for educational or internal business use and supports a clean admin interface with session-based authentication.
 
 ---
 
-## 📋 Features
+##  Features
 
-- ✅ **Login and Registration**
-- ✅ **Vehicle Management** (Add/Edit/Delete Vehicles)
-- ✅ **Customer Management**
-- ✅ **Reservation System** (with status tracking)
-- ✅ **Billing Module** (auto-linked to reservations)
-- ✅ **Report View** (basic reporting logic per reservation/customer/vehicle)
-- ✅ **Sidebar UI** with Bootstrap 5
+-  **Login and Registration**
+-  **Vehicle Management** (Add/Edit/Delete Vehicles)
+-  **Customer Management**
+-  **Reservation System** (with status tracking)
+-  **Billing Module** (auto-linked to reservations)
+-  **Report View** (basic reporting logic per reservation/customer/vehicle)
+-  **Sidebar UI** with Bootstrap 5
 
 ---
 
-## 💻 Tech Stack
+##  Tech Stack
 
 - ASP.NET Core MVC
 - Entity Framework Core
@@ -26,7 +26,7 @@ An ASP.NET Core MVC application that allows car rental companies to manage their
 
 ---
 
-## 🧰 Requirements
+##  Requirements
 
 - .NET 6 or 7 SDK
 - SQL Server (LocalDB or Express)
@@ -34,7 +34,7 @@ An ASP.NET Core MVC application that allows car rental companies to manage their
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the Repo
 
@@ -55,7 +55,7 @@ Update the connection string in appsettings.json:
 Open the terminal or Package Manager Console and run:
 dotnet ef database update
 
--- 📦 Insert Vehicles
+--  Insert Vehicles
 INSERT INTO Vehicles (Make, Model, Year, LicensePlate, Status) VALUES
 ('Toyota', 'Camry', 2020, 'ABC123', 'Available'),
 ('Honda', 'Civic', 2019, 'XYZ456', 'Available'),
@@ -68,7 +68,7 @@ INSERT INTO Vehicles (Make, Model, Year, LicensePlate, Status) VALUES
 ('Kia', 'Soul', 2020, 'KIA999', 'Available'),
 ('Mazda', '6', 2019, 'MAZ456', 'Available');
 
--- 👥 Insert Customers
+--  Insert Customers
 INSERT INTO Customers (Name, Email, Phone, Address) VALUES
 ('Alice Johnson', 'alice@example.com', '555-1234', '123 Main St'),
 ('Bob Smith', 'bob@example.com', '555-5678', '456 Elm St'),
@@ -81,7 +81,7 @@ INSERT INTO Customers (Name, Email, Phone, Address) VALUES
 ('Isla Davis', 'isla@example.com', '555-2109', '444 Birch St'),
 ('Jack Black', 'jack@example.com', '555-3450', '777 Spruce St');
 
--- 📅 Insert Reservations
+--  Insert Reservations
 INSERT INTO Reservations (VehicleId, CustomerId, StartDate, EndDate, Status) VALUES
 (1, 1, GETDATE()-10, GETDATE()-7, 'Completed'),
 (2, 2, GETDATE()-5, GETDATE()-3, 'Completed'),
@@ -94,7 +94,7 @@ INSERT INTO Reservations (VehicleId, CustomerId, StartDate, EndDate, Status) VAL
 (9, 9, GETDATE()-4, GETDATE(), 'Completed'),
 (10, 10, GETDATE(), GETDATE()+4, 'Pending');
 
--- 💵 Insert Billings (linked to ReservationId 1–10)
+--  Insert Billings (linked to ReservationId 1–10)
 INSERT INTO Billings (ReservationId, Subtotal, Tax, TotalAmount, IssuedDate) VALUES
 (1, 300, 45, 345, GETDATE()),
 (2, 400, 60, 460, GETDATE()),
